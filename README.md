@@ -12,10 +12,13 @@ manually move the robot inside the environment. using teleop_keyboard pkg and th
 make sure to publish /scan - laser data, /odom - odometry data for the cartographer to work.
 
 all settings for rviz are present in mapper_config.rviz
-![Alt text](<Screenshot from 2023-10-25 13-44-12.png>)
+
+Check image in images/map_creation.png
 
 Localization
 ros2 launch localization localization.launch.py
 do global position localization ros2 service call /reinitialize_global_localization std_srvs/srv/Empty
 
 rotate the robot using teleop_twist keyboard to localize itself.
+
+Check image in images/localization.png
